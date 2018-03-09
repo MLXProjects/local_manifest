@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Unofficial Builds -->
+	<remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+	<!-- Hardware Samsung -->
+	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="cm-11.0" remote="github" />
+	<!-- Common Project -->
+	<project path="device/ldpi-common" name="bcm216xx-LOS/android_device_ldpi-common" revision="cm-11.0" remote="github" />
+	<project path="device/samsung/rhea-common" name="bcm216xx-LOS/android_device_samsung_rhea-common" revision="cm-11.0" remote="github" />
+	<project path="vendor/samsung" name="bcm216xx-LOS/proprietary_vendor_samsung" revision="cm-11.0" remote="github" />
+	<!-- Project corsica -->
+	<project path="device/samsung/corsica" name="bcm216xx-LOS/android_device_samsung_corsica" revision="cm-11.0" remote="github" />
+	<project path="kernel/samsung/rhea" name="bcm216xx-LOS/android_kernel_rhea" revision="cm-11.0" remote="github" />
+</manifest>
