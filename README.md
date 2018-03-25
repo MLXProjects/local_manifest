@@ -32,6 +32,11 @@ Sync prebuilts:
 
 ---
 
+Apply Pacht
+
+	git clone https://github.com/bcm216xx-LOS/android_patches_los11.git
+	sh android_patches_los11/apply-patches.sh
+
 Initialize the environment:
 
     source build/envsetup.sh
