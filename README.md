@@ -1,6 +1,7 @@
 Manifest for Android KitKat / LineageOS 11.0
 ====================================
-Project corsica|GT-S5310/GT-S5312
+Project coriplus|GT-S5301
+Thanks to bcm216xx for his work on the corsica, all my work is mostly based on his repos.
 
 ---
 
@@ -14,21 +15,13 @@ To initialize LineageOS 11.0 Repo:
 
 To initialize Manifest:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/bcm216xx-LOS/local_manifest/cm-11.0/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/MLXProjects/local_manifest/cm-11.0/local_manifest.xml
 
 ---
 
 Sync the repo:
 
     repo sync -j$( nproc --all ) --force-sync -c --no-clone-bundle --no-tags --optimized-fetch --prune
-
----
-
-Sync prebuilts:
-
-    cd vendor/cm
-    ./get-prebuilts
-    cd ../..
 
 ---
 
@@ -45,4 +38,4 @@ Initialize the environment:
 
 To build:
 
-    brunch corsica
+    brunch coriplus
