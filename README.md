@@ -27,8 +27,10 @@ Sync the repo:
 
 Apply Patch
 
-	git clone https://github.com/MLXProjects/build_tools -b cm-14.1
-	sh android_patches_los11/apply-patches.sh
+	Run "git clone https://github.com/MLXProjects/build_tools.git -b cm-14.1" in root of ROM sources directory.
+	cd rom_sources
+	sources build_tools/patch
+
 
 Initialize the environment:
 
