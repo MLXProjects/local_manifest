@@ -1,21 +1,21 @@
-Manifest for Android KitKat / LineageOS 11.0
+Manifest for Android Nougat / LineageOS 14.1
 ====================================
 Project coriplus|GT-S5301
-Thanks to bcm216xx for his work on the corsica, all my work is mostly based on his repos.
+Thanks to bcm216xx for his work on the corsica and chijure for this repo, all my work is mostly based on their repos.
 
 ---
 
 Manual Way:
 
-To initialize LineageOS 11.0 Repo:
+To initialize LineageOS 14.1 Repo:
 
-    repo init -u https://github.com/LineageOS/android.git -b cm-11.0 --no-clone-bundle --depth=1
+    repo init -u https://github.com/LineageOS/android.git -b cm-14.1 --no-clone-bundle --depth=1
 
 ---
 
 To initialize Manifest:
 
-    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/MLXProjects/local_manifest/cm-11.0/local_manifest.xml
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/MLXProjects/local_manifest/cm-14.1/local_manifest.xml
 
 ---
 
@@ -25,9 +25,9 @@ Sync the repo:
 
 ---
 
-Apply Pacht
+Apply Patch
 
-	git clone https://github.com/bcm216xx-LOS/android_patches_los11.git
+	git clone https://github.com/MLXProjects/build_tools -b cm-14.1
 	sh android_patches_los11/apply-patches.sh
 
 Initialize the environment:
